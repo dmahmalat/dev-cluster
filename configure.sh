@@ -28,7 +28,7 @@ main() {
     verify_binaries
 
     if [[ "${verify}" == 1 ]]; then
-        verify_ansible_hosts
+        #verify_ansible_hosts
         verify_metallb
         verify_kubevip
         verify_age
@@ -59,8 +59,8 @@ main() {
         # ansible
         envsubst < "${PROJECT_DIR}/tmpl/ansible/kube-vip.yml" \
             > "${PROJECT_DIR}/provision/ansible/inventory/group_vars/kubernetes/kube-vip.yml"
-        generate_ansible_hosts
-        generate_ansible_host_secrets
+        #generate_ansible_hosts
+        #generate_ansible_host_secrets
     fi
 }
 
