@@ -2,4 +2,4 @@
 # (string) The interface on the host kube-vip should attach to
 kubevip_interface: "eno1"
 # (string) The ARP address kube-vip broadcasts
-kubevip_address: "172.20.0.250"
+kubevip_address: "172.18.0.250"
